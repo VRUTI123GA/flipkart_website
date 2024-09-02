@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="flipkart.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+</head>
+
+<body>
+    <section>
+        <header class="header">
+            <div class="main_div">
+                <div class="first_f">
+                    <h1>Flipkart</h1>
+                </div>
+                <div class="second_div"><input id="input" type="text" class="text" placeholder="Search for products" />
+                    <i id="close" onclick="search_bar()" class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="section">
+        <div class="right_div">
+            <div class="third_div">
+                <h3>Filters</h3>
+                <hr />
+                <h3>Categories</h3>
+                <div class="less_than"><i class="fa-solid fa-angle-left"></i>
+                    <h4 class="mobile"> Bags and t-shirts</h4>
+                </div>
+                <h3>Mobiles</h3>
+                <span class="line"></span>
+                <h3>Price</h3>
+                <input id="range" type="range" onchange="new_range()" min="5" max="999" />
+
+
+                <span class="line"></span>
+                <div class="angle_up">
+                    <h4>Customer ratings</h4><i class="fa-solid fa-angle-up"></i>
+                </div>
+                <div class="label">
+                    <label><input type="checkbox" onchange="run(3)" id="3" /> 3* and above</label>
+                    <label><input type="checkbox" onchange="run(4)" id="4" /> 4* and above</label>
+                </div>
+                <span class="line"></span>
+
+            </div>
+
+            <div class="left_div" id="li">
+
+            </div>
+
+
+
+        </div>
+
+        </div>
+    </section>
+
+    <script src="flipkart.js"></script>
+</body>
+
+</html>
